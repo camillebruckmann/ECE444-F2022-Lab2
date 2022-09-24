@@ -7,4 +7,4 @@
 ## Activity 2
 ![Activity 2 first commit](activity2_commit1.png?raw=true "Activity 2 first commit")
 ![Activity 2 second commit](activity2_commit2.png?raw=true "Activity 2 second commit")
-![Activity 2 screenshot](activity2_example2.png?raw=true "Activity 2 screenshot")
+![Activity 2 screenshot](activity2_example.png?raw=true "Activity 2 screenshot")
