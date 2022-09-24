@@ -8,3 +8,6 @@
 ![Activity 2 first commit](activity2_commit1.png?raw=true "Activity 2 first commit")
 ![Activity 2 second commit](activity2_commit2.png?raw=true "Activity 2 second commit")
 ![Activity 2 screenshot](activity2_example.png?raw=true "Activity 2 screenshot")
+## Activity 3
+![Activity 3 commit](activity3_commit.png?raw=true "Activity 3 commit")
+![Activity 3 screenshot](activity3_ss.png?raw=true "Activity 3 screenshot")
