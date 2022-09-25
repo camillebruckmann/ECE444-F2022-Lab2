@@ -9,6 +9,7 @@ from wtforms.validators import DataRequired
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?',validators=[DataRequired()])
+    email = EmailField('What is your UofT email address?',validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 app = Flask(__name__)
@@ -24,8 +25,17 @@ def index():
             flash('Looks like you have changed your name!') 
             session['name'] = form.name.data 
             form.name.data = ''
+        old_email = session.get('email') 
+        if old_email is not None and old_email != form.email.data: 
+            flash('Looks like you have changed your email!') 
+            if ("utoronto" in form.email.data):
+                session['email'] = form.email.data
+                form.email.data = ''
+            else:
+                session['email'] = ''
+                form.email.data = ''
     
-    return render_template('index.html', form=form, name=session.get('name'))
+    return render_template('index.html', form=form,email=session.get('email'), name=session.get('name'))
 
 @app.route('/user/<name>')
 def user(name):
